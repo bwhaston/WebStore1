@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>WebStore</name>
-	<description>Demo project for Spring Boot</description>
+	<description>WebStore project for Syntegrity.</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -30,7 +30,6 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 		-->
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
