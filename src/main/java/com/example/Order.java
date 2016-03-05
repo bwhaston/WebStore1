@@ -8,11 +8,10 @@ public class Order
     private HashSet<Product> products = new HashSet<Product>();
     private boolean confirmed;
 
-    public Order(long id, Product product, boolean confirmed)
+    public Order(long id, Product product)
     {
         this.id = id;
         this.products.add(product);
-        this.confirmed = confirmed;
     }
 
     public long getId()
