@@ -15,5 +15,23 @@ public class Product
         this.price = price;
     }
 
+    public String getProductName()
+    {
+        return this.productName;
+    }
 
+    public String getProductDescription()
+    {
+        return this.productDescription;
+    }
+
+    public long getId()
+    {
+        return this.id;
+    }
+
+    public int getPrice()
+    {
+        return this.price;
+    }
 }
