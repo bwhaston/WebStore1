@@ -10,6 +10,8 @@ public class WebStoreController
 {
     HashSet<Product> products = new HashSet<Product>();
 
+
+
     @RequestMapping("/items")
     public HashSet<Product> getItems()
     {
