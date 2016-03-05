@@ -1,5 +1,6 @@
 package com.example;
 
+import java.util.HashSet;
 import org.springframework.web.bind.annotation.RequestMapping;
 // import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,11 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WebStoreController
 {
-    int[] nums = {1, 2, 3, 4, 5};
+    HashSet<Product> products = new HashSet<Product>();
 
     @RequestMapping("/items")
-    public int[] showNums()
+    public HashSet<Product> getItems()
     {
-        return this.nums;
+        return this.products;
     }
 }
