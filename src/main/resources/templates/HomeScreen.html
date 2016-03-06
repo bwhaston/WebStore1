@@ -5,7 +5,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<h1>HomeScreen: Enter product information below!</h1>
+<h1>HomeScreen: Enter product information below to add a new product!</h1>
+<form action="#" th:action="@{/home}" th:object="${Product}" method="post">
+    <p>Name: <input type="text" th:field="*{productName}" /></p>
+    <p>Description: <input type="text" th:field="*{productDescription}"/></p>
+    <p>ID: <input type="text" th:field="*{id}" /></p>
+    <p>Price: <input type="text" th:field="*{price}" /></p>
+    <p><input type="submit" value="Submit" /><input type="reset" value="Reset"/></p>
+</form>
+<h1>Enter product information below to delete a product in stock!</h1>
 <form action="#" th:action="@{/home}" th:object="${Product}" method="post">
     <p>Name: <input type="text" th:field="*{productName}" /></p>
     <p>Description: <input type="text" th:field="*{productDescription}"/></p>
