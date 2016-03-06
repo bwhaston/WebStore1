@@ -1,7 +1,6 @@
 package com.example;
 
 import java.util.HashSet;
-import java.util.Scanner;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
