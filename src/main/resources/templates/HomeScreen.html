@@ -14,6 +14,9 @@
     <p><input type="submit" value="Submit" /><input type="reset" value="Reset"/></p>
 </form>
 <h1>Enter product information below to delete a product in stock!</h1>
+<!-- Make a new HTML page that the submit box below can then hyperlink to.
+Something like /deletedProduct, and then have that page hyperlink back to /home
+witha  button. -->
 <form action="#" th:action="@{/home}" th:object="${Product}" method="post">
     <p>Name: <input type="text" th:field="*{productName}" /></p>
     <p>Description: <input type="text" th:field="*{productDescription}"/></p>
