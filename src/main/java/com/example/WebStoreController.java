@@ -28,11 +28,11 @@ public class WebStoreController
     }
 
     @RequestMapping(value="/home", method=RequestMethod.POST)
-    public String greetingSubmit(@ModelAttribute Product product, Model model)
+    public String productSubmit(@ModelAttribute Product product, Model model)
     {
         model.addAttribute("product", product);
         this.products.add(product);
-        return "NewItemPage";
+        return "NewProductPage";
     }
 
     /*
