@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 @Controller
 public class WebStoreController
 {
+    /*
+    These collections are here for testing purposes before I set up a DBMS.
+    */
     HashSet<Product> products = new HashSet<Product>();
     HashSet<Order> orders = new HashSet<Order>();
 
