@@ -2,11 +2,12 @@ package com.example;
 
 public class Product
 {
-    public String productName;
-    public String productDescription;
-    public long id;
-    public int price;
+    private String productName;
+    private String productDescription;
+    private long id;
+    private int price;
 
+    /*
     public Product(String productName, String productDescription, long id, int price)
     {
         this.productName = productName;
@@ -14,6 +15,7 @@ public class Product
         this.id = id;
         this.price = price;
     }
+    */
 
     public String getProductName()
     {
@@ -33,5 +35,25 @@ public class Product
     public int getPrice()
     {
         return this.price;
+    }
+
+    public void setProductName(String newName)
+    {
+        this.productName = newName;
+    }
+
+    public void setProductDescription(String newDescription)
+    {
+        this.productDescription = newDescription;
+    }
+
+    public void setId(long newId)
+    {
+        this.id = newId;
+    }
+
+    public void setPrice(int newPrice)
+    {
+        this.price = newPrice;
     }
 }
