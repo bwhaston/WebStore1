@@ -27,11 +27,18 @@ public class WebStoreController
         return "HomeScreen";
     }
 
+    @RequestMapping(value="/home", method=RequestMethod.POST)
+    public String greetingSubmit(@ModelAttribute Product product, Model model)
+    {
+        model.addAttribute("product", product);
+        this.products.add(product);
+        return "NewItemPage";
+    }
+
+    /*
     @RequestMapping(value="/items", method=RequestMethod.GET)
     public HashSet<Product> getItems()
     {
-        Product p = new Product();
-        this.products.add(p);
         return this.products;
     }
 
@@ -43,4 +50,5 @@ public class WebStoreController
         this.orders.add(o);
         return this.orders;
     }
+    */
 }
